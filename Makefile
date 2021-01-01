@@ -8,11 +8,12 @@ upload:
 
 .PHONY: run
 run: upload
-	@pio run -t monitor
+	@sleep 1.5
+	@pio device monitor
 
 .PHONY: monitor
 monitor:
-	@pio run -t monitor
+	@pio device monitor
 
 .PHONY: clean
 clean:
